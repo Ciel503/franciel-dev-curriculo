@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+}
+.nav-bar{
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+#formulario{
+    background-color: rgb(247, 205, 255);
+    padding: 20px;
+    width: 50%;  
+    margin-top: 50px;
+}
+
+input{
+    border:inset;
+    padding: 3px;
+    
+}
+textarea{
+    border:inset;
+}
+/* container todo */
+#container{
+    display: flex;
+}
+
+/* resultado */
+#resultado{
+    width: 50%;
+    /* border: solid; */
+    margin-left: 10px;
+    margin-top: 50px;
+    
+    padding: 20px;
+    
+}
+#rnome{
+    margin-left: 4%;
+}
+
+#bt1{
+    position: fixed;
+    bottom: 40px;
+    right: 50%;
+}
+
+/* media print */
+@media print {
+    body * {
+      visibility: hidden;
+    }
+   
+    #resultado, #resultado * {
+      visibility: visible;
+    }
+    #resultado {
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  /* media scrim */
+ @media screen and (max-width: 425px) {
+
+  #formulario{
+    padding: 0;
+    
+  }
+  
+}
+@media screen and (max-width: 400px) {
+    
+    #container{
+        display: block;
+    }
+    #formulario{
+        width: 100%;
+        text-align: center
+    }
+    #resultado{
+        width: 100%;
+    }
+
+  }
+
+  @media screen and (min-width: 700px) {
+
+    #container{
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    
+
+  }
+
+  @media screen and (max-width: 700px) {
+
+    #bt1{
+        right: 3px;
+    }
+    
+    
+
+  }
+
+ 
